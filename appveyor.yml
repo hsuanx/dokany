@@ -16,10 +16,7 @@
 
   version: 1.4.0-{build}
   configuration:
-  - All
   - SonarQube
-  - FsTest
-  - Documentation
 
   image:
     - Visual Studio 2019
