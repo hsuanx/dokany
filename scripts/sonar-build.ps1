@@ -7,8 +7,6 @@ param (
 )
 
 . .\scripts\build_helper.ps1
-
-$ErrorActionPreference = "Stop"
  
 $SONAR_CFAMILY_BUILDWRAPPEROUTPUT="bw-output"
 set-alias sonar-scanner "SonarScanner.MSBuild.exe"
