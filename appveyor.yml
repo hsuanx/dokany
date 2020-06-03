@@ -186,7 +186,7 @@
       $buildCmd = $(cmd /c where msbuild)
 
   - ps: |
-      if ($env:CONFIGURATION -eq "SonarQube" -and "$env:APPVEYOR_REPO_BRANCH" -eq "master") {
+      if ($env:CONFIGURATION -eq "SonarQube") {
        
         if ($env:APPVEYOR_PULL_REQUEST_NUMBER) {
           Add-AppveyorMessage -Message "Not running SonarQube on pull request." -Category Information
